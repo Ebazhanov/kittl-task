@@ -1,5 +1,6 @@
 context("Change user profile-image picture", () => {
   before(() => {
+    Cypress.Cookies.debug(true);
     cy.clearCookies();
     cy.visit("/");
   });
