@@ -49,7 +49,7 @@ context("Login", () => {
         .should("have.value", "beHappy1");
     cy.get("button[data-testid=login").click();
 
-    cy.get('[data-testid="profile-image"]').eq(0).trigger('mouseover')
+    cy.get('[data-testid="header"] [data-testid="profile-image"]').eq(0).trigger('mouseover')
     cy.get('[data-testid="log-out"]').click()
     cy.contains('Log In').should('be.visible')
     cy.contains('Sign Up').should('be.visible')
