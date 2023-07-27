@@ -1,5 +1,7 @@
 # Kittl QA Test assignment
 
+
+![Badge](https://github.com/ebazhanov/kittl-task/actions/workflows/main.yml/badge.svg)
 ## Intro
 
 > Our QA engineer fled to Madagascar to protect endangered species of bugs.  I guess she squished way too many of them during her career and now needs to tip the scales... Anyway, before she left she started working on an automation script for the login flow of our website. Sadly the test she wrote doesn't seem to work.
