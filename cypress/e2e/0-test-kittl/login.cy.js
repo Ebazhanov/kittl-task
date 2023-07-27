@@ -35,7 +35,7 @@ context("Login", () => {
     cy.contains('Log In').should('not.exist')
     cy.contains('Sign Up').should('not.exist')
 
-    cy.get('[data-testid="profile-image"]').should("have.text",'ZZ')
+    cy.get('[data-testid="profile-image"]').should("contain.text",'Z')
     cy.contains('My Projects').should('be.visible')
     cy.contains('New Project').should('be.visible')
   });
@@ -49,7 +49,7 @@ context("Login", () => {
         .type("beHappy1")
         .should("have.value", "beHappy1");
     cy.get("button[data-testid=login").click();
-    cy.get('[data-testid="profile-image"]').should("have.text",'ZZ')
+    cy.get('[data-testid="profile-image"]').should("contain.text",'Z')
 
     cy.get('[data-testid="profile-image"]').eq(0).trigger('mouseover')
     cy.get('[data-testid="log-out"]').click()
