@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  schedule:
+  #schedule:
     # triggers the workflow every day at 5:30 and 17:30 UTC:
     #- cron: '30 5,17 * * *'
 
